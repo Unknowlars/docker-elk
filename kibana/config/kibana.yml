@@ -31,7 +31,9 @@ elasticsearch.password: ${KIBANA_SYSTEM_PASSWORD}
 ## https://www.elastic.co/guide/en/kibana/current/fleet-settings-kb.html
 #
 xpack.fleet.agents.fleet_server.hosts: [ http://fleet-server:8220 ]
-
+xpack.encryptedSavedObjects.encryptionKey: df5f815054ae4388a9e1f8f216c09fb0
+xpack.reporting.encryptionKey: 27257a1a1e34a0e9c7511d661c821cf9
+xpack.security.encryptionKey: aae04d6db7828c66f6a4e6604e0a18ef
 xpack.fleet.outputs:
   - id: fleet-default-output
     name: default
